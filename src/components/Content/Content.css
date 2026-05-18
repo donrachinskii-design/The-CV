@@ -1,0 +1,24 @@
+.content {
+  padding: 0 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-section {
+  width: 80%;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #1a1a1a;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

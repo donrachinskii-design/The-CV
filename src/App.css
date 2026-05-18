@@ -1,14 +1,11 @@
 .app {
-  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 header {
   text-align: center;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #333;
 }
 
 h1 {
@@ -25,3 +22,4 @@ h2 {
 section {
   margin-bottom: 2rem;
 }
+

@@ -1,0 +1,99 @@
+.work-experience {
+  padding: 24px;
+  background: #f9f9f9;
+  border-left: 4px solid #333;
+  border-radius: 4px;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.work-main-info {
+  flex: 1;
+}
+
+.work-position {
+  font-size: 24px;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.work-company {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+
+.work-period {
+  font-size: 16px;
+  color: #777;
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.work-description {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.work-key-results-title,
+.work-technologies-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.work-technologies-title {
+  margin-bottom: 12px;
+}
+
+.work-description-list {
+  color: #444;
+  margin: 0;
+  padding-left: 24px;
+  list-style-type: disc;
+}
+
+.work-description-item {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.work-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #333;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .work-header {
+    flex-direction: column;
+  }
+
+  .work-period {
+    align-self: flex-start;
+  }
+}
