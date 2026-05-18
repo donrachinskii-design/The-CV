@@ -86,11 +86,6 @@
   border-radius: 12px;
   font-size: 13px;
   font-weight: 500;
-  transition: all 150ms ease;
-}
-
-.skill-tag:hover {
-  background-color: #1a1a1a;
 }
 
 /* Образование */

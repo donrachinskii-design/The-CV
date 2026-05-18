@@ -5,7 +5,7 @@
 
 .content-wrapper {
   display: flex;
-  gap: 40px;
+  gap: 56px;
   max-width: 1200px;
   margin: 0 auto;
 }

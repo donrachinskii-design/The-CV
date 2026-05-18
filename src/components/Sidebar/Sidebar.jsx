@@ -1,12 +1,19 @@
-
 import React from 'react';
 import './Sidebar.css';
 
 function Sidebar() {
   const contacts = [
-    { label: 'Email', value: 'don.misha.rachinskii@ya.ru', href: 'mailto:don.misha.rachinskii@ya.ru' },
+    {
+      label: 'Email',
+      value: 'don.misha.rachinskii@ya.ru',
+      href: 'mailto:don.misha.rachinskii@ya.ru',
+    },
     { label: 'Phone', value: '+7 (999) 480-20-22', href: 'tel:+79994802022' },
-    { label: 'GitHub', value: 'donrachinskii-design', href: 'https://github.com/donrachinskii-design' },
+    {
+      label: 'GitHub',
+      value: 'donrachinskii-design',
+      href: 'https://github.com/donrachinskii-design',
+    },
   ];
 
   const skills = [
@@ -22,15 +29,30 @@ function Sidebar() {
     'Git',
     'Docker',
     'SQL',
+    'HTML5',
+    'REST API',
+    'Jest',
+    'React Testing Library',
+    'Axios',
+    'Next.js',
+    'Material-UI',
+    'Storybook',
+    'ESLint',
+    'Prettier',
+    'npm/yarn',
+    'Figma',
+    'Postman',
+    'Chrome DevTools',
+    'Linux',
   ];
 
   const strengths = [
-    'Обширный опыт разработки frontend-приложений позволяет предлагать оптимальные решения даже при неполной постановке задачи',
-    'Опыт в смежных областях: дизайн веб-проектов, работа с векторной графикой и анимацией',
-    'Создаю дружественную атмосферу в команде, ориентируюсь на решение проблем, а не поиск виноватых',
-    'Активно делюсь знаниями и опытом с коллегами, помогаю их профессиональному развитию',
-    'Оптимизирую производительность с использованием современных инструментов и методик',
-    'Опыт оценки и реализации сложных задач на всех этапах: от анализа до внедрения решения',
+    'Обширный опыт разработки frontend-приложений позволяет предлагать оптимальные решения даже при неполной постановке задачи.',
+    'Опыт в смежных областях: дизайн веб-проектов, работа с векторной графикой и анимацией.',
+    'Опыт оценки и реализации сложных задач на всех этапах: от анализа до внедрения решения.',
+    'Создаю дружественную атмосферу в команде, ориентируюсь на решение проблем, а не поиск виноватых.',
+    'Активно делюсь знаниями и опытом с коллегами, помогаю их профессиональному развитию.',
+    'Оптимизирую производительность с использованием современных инструментов и методик.',
   ];
 
   const education = [
@@ -40,13 +62,18 @@ function Sidebar() {
       degree: 'Бакалавр',
       field: 'Информационная безопасность',
       year: '2020',
-    }
+    },
   ];
 
   const renderContactValue = (contact) => {
     if (contact.href) {
       return (
-        <a href={contact.href} target="_blank" rel="noopener noreferrer" className="contact-link">
+        <a
+          href={contact.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
           {contact.value}
         </a>
       );
