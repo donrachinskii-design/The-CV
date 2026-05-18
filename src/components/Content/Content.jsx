@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkExperience from '../WorkExperience';
+import Sidebar from '../Sidebar';
 import './Content.css';
 
 const experiences = [
@@ -75,7 +76,6 @@ const experiences = [
     keyResults: [
       'Совместно с техническим директором заказчика провел интервью и сформировал команду из 4 разработчиков.',
       'Реализовал задачи различной сложности с полным покрытием unit-тестами.',
-      'Провел code review и наставничество для членов команды.',
     ],
     technologies: ['React', 'TypeScript', 'Axios', 'Gherkin', 'Cucumber'],
   },
@@ -95,10 +95,8 @@ const experiences = [
           rel="noopener noreferrer"
         >
           salonultimate.com
-        </a>
-        {' '}
-        и
-        {' '}
+        </a>{' '}
+        и{' '}
         <a
           href="https://fieldcode.com"
           target="_blank"
@@ -131,14 +129,19 @@ const experiences = [
 function Content() {
   return (
     <main className="content">
-      <section className="experience-section">
-        <h2 className="section-title">Опыт работы</h2>
-        <div className="experience-list">
-          {experiences.map((exp) => (
-            <WorkExperience key={exp.id} {...exp} />
-          ))}
-        </div>
-      </section>
+      <div className="content-wrapper">
+        <Sidebar />
+        <section className="main-content">
+          <section className="experience-section">
+            <h2 className="section-title">Опыт работы</h2>
+            <div className="experience-list">
+              {experiences.map((exp) => (
+                <WorkExperience key={exp.id} {...exp} />
+              ))}
+            </div>
+          </section>
+        </section>
+      </div>
     </main>
   );
 }

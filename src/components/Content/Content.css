@@ -1,24 +1,44 @@
 .content {
-  padding: 0 16px;
   width: 100%;
+  padding: 40px 20px;
+}
+
+.content-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .experience-section {
-  width: 80%;
+  width: 100%;
 }
 
 .section-title {
-  font-size: 32px;
-  color: #1a1a1a;
+  font-size: 22px;
   font-weight: 700;
-  padding-bottom: 8px;
+  margin-bottom: 30px;
+  color: #1a1a1a;
 }
 
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
 }

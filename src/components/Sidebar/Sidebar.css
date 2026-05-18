@@ -1,0 +1,190 @@
+.sidebar {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: 0px;
+}
+
+/* Контакты */
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-label {
+  font-size: 12px;
+  color: #666;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-size: 15px;
+  color: #444;
+  word-break: break-word;
+  line-height: 1.6;
+}
+
+.contact-link {
+  font-size: 15px;
+  color: #0066cc;
+  text-decoration: none;
+  word-break: break-word;
+  line-height: 1.6;
+  transition: color 200ms ease;
+}
+
+.contact-link:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
+
+/* Навыки */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 150ms ease;
+}
+
+.skill-tag:hover {
+  background-color: #1a1a1a;
+}
+
+/* Образование */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.education-institution {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.education-degree {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.education-field {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.education-year {
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Сильные стороны */
+.strengths-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.strength-item {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  padding-left: 16px;
+  position: relative;
+}
+
+.strength-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .sidebar-section {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .skills-list {
+    gap: 6px;
+  }
+
+  .skill-tag {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
