@@ -1,0 +1,12 @@
+{
+  "name": "the-cv",
+  "version": "1.0.0",
+  "description": "CV by Michael Rachinskii",
+  "license": "ISC",
+  "author": "Michael Rachinskii",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
